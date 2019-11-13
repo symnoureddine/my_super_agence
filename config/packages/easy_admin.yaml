@@ -1,0 +1,18 @@
+easy_admin:
+    entities:
+        Property: 
+            class: App\Entity\Property
+        Optionn: 
+            class: App\Entity\Optionn
+        User:
+            class: App\Entity\User
+
+    design:
+        brand_color: '#1ABC9C'
+        menu:
+            - label: 'Agence'
+              icon: 'newspaper-o'
+              children:
+                  - {entity: 'Property', icon: 'newspaper-o', label: 'propertie'}
+                  - {entity: 'Optionn', icon: 'inbox', label: 'option'}
+                  - {entity: 'User', icon: 'inbox', label: 'utilisateur'}
